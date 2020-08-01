@@ -1,0 +1,8 @@
+{
+  "workPath": "/Volumes/Work/projects",
+  "backupPath": "/Volumes/RamDisk/gitlab-backup",
+  "gitlab": {
+    "fetchProjectsUrl": "http://192.168.0.101/api/v4/projects?private_token=TOKEN&per_page=50000&page=1&order_by=id",
+    "gitlabUrl": "http://192.168.0.101"
+  }
+}

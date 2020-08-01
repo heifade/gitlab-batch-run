@@ -1,0 +1,48 @@
+{
+  "name": "gitlab-batch-run",
+  "version": "1.0.10",
+  "description": "",
+  "bin": {
+    "gitlab-pull": "./bin/pull.js",
+    "gitlab-clone": "./bin/clone.js",
+    "gitlab-push": "./bin/push.js",
+    "gitlab-backups": "./bin/backup.js",
+    "gitlab-restore": "./bin/restore.js"
+  },
+  "scripts": {
+    "clone": "node ./dist/clone.js",
+    "clone-debug": "ts-node ./src/clone.ts",
+    "pull": "node ./dist/pull.js",
+    "pull-debug": "ts-node ./src/pull.ts",
+    "push": "node ./dist/push.js",
+    "push-debug": "ts-node ./src/push.ts",
+    "backup": "node ./dist/backup.js",
+    "backup-debug": "ts-node ./src/backup.ts",
+    "restore": "node ./dist/restore.js",
+    "restore-debug": "ts-node ./src/restore.ts",
+    "build": "webpack --config webpack.config.ts && ts-node ./src/tools/build.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.8",
+    "@types/user-home": "^2.0.0",
+    "@types/webpack": "^4.41.2",
+    "chai": "^4.2.0",
+    "gitlab-batch": "^1.0.3",
+    "mocha": "^7.0.0",
+    "nyc": "^15.0.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "user-home": "^2.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
